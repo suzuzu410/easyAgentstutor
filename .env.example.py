@@ -1,0 +1,11 @@
+# 模型名称
+LLM_MODEL_ID=your_model
+
+# API密钥
+LLM_API_KEY=your_api_key_here
+
+# 服务地址
+LLM_BASE_URL=https://api.deepseek.com
+
+# 超时时间(可选,默认60秒)
+LLM_TIMEOUT=60

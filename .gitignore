@@ -1,0 +1,22 @@
+# 环境与密钥
+.env
+.venv/
+venv/
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 日志与追踪文件
+memory/
+*.jsonl
+*.html
+
+# IDE
+.idea/
+.vscode/
+
+.memory
+.sessions
+.traces
+.skills

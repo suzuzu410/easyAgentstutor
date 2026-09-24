@@ -22,3 +22,37 @@
    └─→ call_reviewer → ReviewerAgent (代码评审)
                           ↓
                    [ CodeRunner 工具 ] (exec 执行代码，捕获输出)
+
+
+🚀 快速开始
+1. 配置环境
+bash
+
+# 克隆项目
+git clone https://github.com/你的用户名/easyAgentstutor.git
+cd easyAgentstutor
+
+# 创建并激活虚拟环境
+python -m venv .venv
+.venv\Scripts\activate  # Windows
+# source .venv/bin/activate  # Mac/Linux
+
+# 安装依赖
+pip install "hello-agents[all]"
+pip install python-dotenv
+
+2. 配置 API Key
+
+复制 .env.example 为 .env，填入你的 DeepSeek API Key：
+env
+
+LLM_MODEL_ID=deepseek-flash
+LLM_API_KEY=sk-你的DeepSeek密钥
+LLM_BASE_URL=https://api.deepseek.com
+
+3. 运行项目
+bash
+
+python main.py
+
+在终端输入你的目标（如 我想学习 Python 列表推导式 或 评测以下代码：print("hello")），系统将自动调度。
